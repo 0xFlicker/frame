@@ -1,0 +1,32 @@
+{
+  "name": "@0xflick/frame",
+  "version": "0.0.2",
+  "description": "Wagmi v2 (beta) connector for frame",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:0xFlicker/frame.git",
+  "author": "0xflick <github@0xflick.xyz>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "prepare": "install-peers"
+  },
+  "dependencies": {
+    "eth-provider": "^0.13.6"
+  },
+  "peerDependencies": {
+    "@wagmi/core": "^2.0.0-beta.9",
+    "viem": "^2.0.0-beta.16"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "install-peers-cli": "^2.2.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
